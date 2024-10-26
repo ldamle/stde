@@ -1,4 +1,4 @@
-import * as lle from 'ldamle.lle';
+import * as lle from '@ldamle/lle';
 
 class stde extends lle.Element {
     constructor(

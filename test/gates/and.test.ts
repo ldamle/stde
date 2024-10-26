@@ -14,7 +14,7 @@ describe('Check AND', () => {
     });
 
     test('Check AND with group', () => {
-        let and2 = stde.and(4, [3, 1, 4, 2]);
+        let and2 = stde.and([3, 1, 4, 2]);
 
         expect(and2.name).toEqual('AND');
         expect(and2.in_connections).toEqual([

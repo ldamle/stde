@@ -14,7 +14,7 @@ describe('Check NAND', () => {
     });
 
     test('Check NAND with group', () => {
-        let nand2 = stde.nand(4, [3, 1, 4, 2]);
+        let nand2 = stde.nand([3, 1, 4, 2]);
 
         expect(nand2.name).toEqual('NAND');
         expect(nand2.in_connections).toEqual([

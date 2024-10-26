@@ -14,7 +14,7 @@ describe('Check XOR', () => {
     });
 
     test('Check XOR with group', () => {
-        let xor2 = stde.xor(4, [3, 1, 4, 2]);
+        let xor2 = stde.xor([3, 1, 4, 2]);
 
         expect(xor2.name).toEqual('XOR');
         expect(xor2.in_connections).toEqual([

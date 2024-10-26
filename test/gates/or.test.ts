@@ -14,7 +14,7 @@ describe('Check OR', () => {
     });
 
     test('Check OR with group', () => {
-        let or2 = stde.or(4, [3, 1, 4, 2]);
+        let or2 = stde.or([3, 1, 4, 2]);
 
         expect(or2.name).toEqual('OR');
         expect(or2.in_connections).toEqual([

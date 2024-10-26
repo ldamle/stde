@@ -9,7 +9,7 @@
   "author": "pluttan",
   "license": "MIT",
   "dependencies": {
-    "ldamle.lle": "^1.0.50"
+    "@ldamle/lle": "^1.0.50"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",

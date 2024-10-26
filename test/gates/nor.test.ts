@@ -14,7 +14,7 @@ describe('Check NOR', () => {
     });
 
     test('Check NOR with group', () => {
-        let nor2 = stde.nor(4, [3, 1, 4, 2]);
+        let nor2 = stde.nor([3, 1, 4, 2]);
 
         expect(nor2.name).toEqual('NOR');
         expect(nor2.in_connections).toEqual([

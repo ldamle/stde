@@ -14,7 +14,7 @@ describe('Check XNOR', () => {
     });
 
     test('Check XNOR with group', () => {
-        let xnor2 = stde.xnor(4, [3, 1, 4, 2]);
+        let xnor2 = stde.xnor([3, 1, 4, 2]);
 
         expect(xnor2.name).toEqual('XNOR');
         expect(xnor2.in_connections).toEqual([
@@ -45,7 +45,7 @@ describe('Check XNOR', () => {
         expect(xnor2.state('0000111100')).toEqual('0000');
     });
 
-    test('Check XOR with group2', () => {
+    test('Check XNOR with group2', () => {
         let xnor3 = stde.xnor(4, 2);
 
         expect(xnor3.name).toEqual('XNOR');
@@ -57,13 +57,12 @@ describe('Check XNOR', () => {
             'C_1',
             'C_2',
             'D_1',
-            'D_2',
+            'D_2'
         ]);
         expect(xnor3.out_connections.length).toEqual(2);
         xnor3.out_connections.forEach((i, ind) => {
             expect(i.out.name).toEqual(String(ind + 1));
         });
-
 
         expect(xnor3.state('00000000')).toEqual('11');
         expect(xnor3.state('01010101')).toEqual('11');
